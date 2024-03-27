@@ -2,7 +2,8 @@ from flask import Flask, request, jsonify, render_template
 import openai
 import openai.error
 import traceback
-
+require('dotenv').config()
+console.log(process.env)
 app = Flask(__name__)
 
 # Set your OpenAI API key
